@@ -76,24 +76,7 @@ int main(){
 }
 stack<int> search(info in){
 	stack<int>s;
-	char getword[100];	string line, filename;
-	ifstream myfile;	int temp1=1;
-	string st1 = "Textfile";	string ext = ".txt";
-	for (int i = 1; i<9; i++){
-		stringstream ss;	
-		ss << i;
-		filename = st1 + ss.str() + ext;
-		myfile.open(filename.c_str());
-		if (myfile.is_open()){
-			while (myfile >> getword){
-				if (strcmp(in.str, getword) == 0){
-					s.push(temp1);
-				}
-			}
-		}
-		myfile.close();	temp1++;
-	}temp1 = 0;
-	return s;
+	
 }
 
 
